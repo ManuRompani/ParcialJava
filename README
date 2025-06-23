@@ -2,3 +2,40 @@ Hola!
 Esta es la resolucion del parcial.
 Fue desarrollado en menos de 2hs por lo que el codigo no es el mejor...
 No cuenta con validaciones.
+
+Consigna.
+Realizar un programa basado en el famoso juego de Mario Bross.
+Cargar tres personajes con los siguientes datos:
+•	Nombre
+•	Habilidad (De 0 a 10, no validar)
+•	profesión: (D: Doctor, C: Chef, P: Plomero)
+Luego, entrar a un menú con las siguientes funcionalidades:
+________________________________________
+1. Mostrar el listado de personajes. Con su nombre, nivel actual, profesión, puntaje actual y si tiene estrella.
+Ej.:
+Mario – Nivel 3 – Plomero – 400p – Sin bonus
+Luigi – Nivel 1 – Doctor – 20p – Con estrella
+Honguito – Nivel 5 – Chef – 760p – Con estrella
+El puntaje actual se calcula multiplicando por 25 el nivel actual y sumando 2 puntos por cada moneda actualmente en posesión.
+________________________________________
+2. Comprar estrella
+Se deberá mostrar el listado completo de personajes y cuantas monedas tiene cada uno. Luego se deberá elegir uno por su posición. Si este tiene al menos 50 monedas, podrá usarlas para comprar una estrella (Esta sirve para pasar automáticamente el próximo nivel que haga).
+Nota: Si el personaje tiene más de 120 puntos, tendrá un descuento del 20% en el precio de la estrella
+________________________________________
+3. Jugar ronda
+Todos los personajes intentan pasar el nivel en el que se encuentran. Cada nivel tiene una dificultad definida y el máximo nivel es el 5 (Se puede seguir jugando después del 5, pero no deberá aumentar el nivel).
+Si la habilidad de un personaje multiplicada por 50 supera la dificultad, se pasa al siguiente nivel. IMPORTANTE: Si el personaje tiene una estrella, el nivel se pasa automáticamente, pero la estrella se pierde en el proceso.
+Dificultad = nivel * 30
+________________________________________
+4. Trabajar
+Seleccionar un personaje para trabajar. El personaje puede trabajar para ganar una cantidad de monedas dependiendo de su profesión. Al comenzar el programa, todos los personajes pueden trabajar solo una vez. Pero ganan una posibilidad extra de trabajar cada vez que pierden un nivel.
+Profesión	Monedas
+Chef	20 monedas
+Doctor	30 monedas
+Plomero	35 monedas
+________________________________________
+Notas:
+•	Todos los atributos deben ser privados y se deben respetar las convenciones de nomenclatura.
+•	Usar sc.next().charAt(0) para obtener caracteres por consola.
+•	Todos los personajes empiezan por el nivel 1.
+•	Todos empiezan sin estrellas, ni monedas.
